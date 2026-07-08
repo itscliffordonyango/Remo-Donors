@@ -1,5 +1,5 @@
 
-  # Design Remo Donations App
+  # Remo Donors Mobile App
 
   ## Running the code
 
