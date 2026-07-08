@@ -7,9 +7,9 @@ import {
   Droplets, Award, Activity, Info, Filter,
 } from "lucide-react";
 
-// ─────────────────────────────────────────────────────────────
+//
 // DATA
-// ─────────────────────────────────────────────────────────────
+//
 
 const USER = {
   name: "Sarah Johnson",
@@ -150,9 +150,9 @@ const CAL_DAYS = 31;
 const TODAY_DAY = 7;
 const AVAILABLE_DAYS = [8,9,10,11,12,14,15,16,17,18,21,22,23,24,25,28,29,30,31];
 
-// ─────────────────────────────────────────────────────────────
+//
 // SHARED COMPONENTS
-// ─────────────────────────────────────────────────────────────
+//
 
 function StatusBar() {
   return (
@@ -209,9 +209,9 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
-// ─────────────────────────────────────────────────────────────
+//
 // HOME SCREEN
-// ─────────────────────────────────────────────────────────────
+//
 
 function HomeScreen({ onNavigate, onBook }: { onNavigate: (s: string) => void; onBook: (c: any) => void }) {
   return (
@@ -394,9 +394,9 @@ function HomeScreen({ onNavigate, onBook }: { onNavigate: (s: string) => void; o
   );
 }
 
-// ─────────────────────────────────────────────────────────────
+//
 // FIND CAMPS SCREEN
-// ─────────────────────────────────────────────────────────────
+//
 
 function FindScreen({ onBook }: { onBook: (c: any) => void }) {
   const [query, setQuery] = useState("");
@@ -551,9 +551,9 @@ function FindScreen({ onBook }: { onBook: (c: any) => void }) {
   );
 }
 
-// ─────────────────────────────────────────────────────────────
+//
 // CALENDAR COMPONENT
-// ─────────────────────────────────────────────────────────────
+//
 
 function CalendarGrid({ selected, onSelect }: { selected: number | null; onSelect: (d: number) => void }) {
   const DAY_LABELS = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
@@ -620,9 +620,9 @@ function CalendarGrid({ selected, onSelect }: { selected: number | null; onSelec
   );
 }
 
-// ─────────────────────────────────────────────────────────────
+//
 // BOOKING SCREEN
-// ─────────────────────────────────────────────────────────────
+//
 
 function BookingScreen({
   camp, onBack, onSuccess, onHome,
@@ -890,9 +890,9 @@ function BookingScreen({
   );
 }
 
-// ─────────────────────────────────────────────────────────────
+//
 // APPOINTMENTS SCREEN
-// ─────────────────────────────────────────────────────────────
+//
 
 function AppointmentsScreen() {
   const [tab, setTab] = useState<"upcoming" | "past">("upcoming");
@@ -994,9 +994,9 @@ function AppointmentsScreen() {
   );
 }
 
-// ─────────────────────────────────────────────────────────────
+//
 // HISTORY SCREEN (donation stats)
-// ─────────────────────────────────────────────────────────────
+//
 
 function HistoryScreen() {
   return (
@@ -1085,9 +1085,9 @@ function HistoryScreen() {
   );
 }
 
-// ─────────────────────────────────────────────────────────────
+//
 // PROFILE SCREEN
-// ─────────────────────────────────────────────────────────────
+//
 
 function ProfileScreen() {
   return (
@@ -1208,9 +1208,9 @@ function ProfileScreen() {
   );
 }
 
-// ─────────────────────────────────────────────────────────────
+//
 // BOTTOM NAV
-// ─────────────────────────────────────────────────────────────
+//
 
 const NAV_ITEMS = [
   { id: "home",         label: "Home",     Icon: Heart    },
@@ -1250,9 +1250,9 @@ function BottomNav({ active, onChange }: { active: string; onChange: (s: string)
   );
 }
 
-// ─────────────────────────────────────────────────────────────
+//
 // APP ROOT
-// ─────────────────────────────────────────────────────────────
+//
 
 export default function App() {
   const [screen, setScreen] = useState("home");
